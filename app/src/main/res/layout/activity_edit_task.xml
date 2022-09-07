@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditTask"
+    android:orientation="vertical"
+    android:background="#EEEEEE"
+    android:gravity="center"
+    android:padding="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task Details"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/task_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Name"
+        android:padding="15dp"
+        android:background="@drawable/edit_text"
+        android:layout_marginTop="25dp"
+        android:textColorHint="#A2B5BB"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/task_priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Priority"
+        android:padding="15dp"
+        android:background="@drawable/edit_text"
+        android:layout_marginTop="25dp"
+        android:textColorHint="#A2B5BB"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="UPDATE"
+            android:textColor="@color/black"
+            android:backgroundTint="#5FD068"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="50dp"/>
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="DELETE"
+            android:textColor="@color/black"
+            android:backgroundTint="#EB1D36"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="40dp"/>
+    </LinearLayout>
+
+</LinearLayout>
